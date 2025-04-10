@@ -1,15 +1,43 @@
 body {
-    background-color: white;
-  }
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    
-    color: black;
-  }
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    color: black;
-  }
-  
+  background-color: #f0f0ff;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+section {
+  border: 2px solid #c6d0f5;
+}
+
+
+.kuva {
+  position:relative;
+  bottom: 100px;
+  left: 1000px;
+
+}
+
+
+h1 {
+  font-size: 60px;
+  color: #545454;
+}
+h2 {
+  font-size: 48px;
+  color: #545454;
+}
+h3 {
+  font-size: 32px;
+  color: #545454;
+}
+h4 {
+  font-size: 18px;
+  color: #545454;
+}
+h5 {
+  font-size: 18px;
+  color: #545454;
+}
+h6 {
+  font-size: 18px;
+  color: #545454;
+}

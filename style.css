@@ -8,6 +8,28 @@ section {
   border: 2px solid #c6d0f5;
 }
 
+a {
+  color: #545454;
+
+}
+
+a:hover {
+  color: #919191;
+}
+
+a:visited {
+  color: #727272;
+}
+
+button {
+  background-color: #545454;
+  color:white
+}
+
+button:hover {
+  background-color: #919191;
+}
+
 
 .kuva {
   position:relative;

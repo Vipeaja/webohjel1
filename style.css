@@ -2,6 +2,8 @@ body {
   background-color: #f0f0ff;
   margin-left: 64px;
   margin-right: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 section {
@@ -33,11 +35,14 @@ button:hover {
 
 .kuva {
   position:relative;
-  bottom: 100px;
-  left: 1000px;
+  bottom: 75px;
+  left: 900px;
 
 }
 
+.otsikko {
+  margin: 0;
+}
 
 h1 {
   font-size: 60px;
@@ -60,6 +65,62 @@ h5 {
   color: #545454;
 }
 h6 {
-  font-size: 18px;
+  font-size: 48px;
   color: #545454;
+  margin: 0;
+}
+
+.body {
+  height: 100%;
+  
+}
+
+.container > div {
+  background-color: #3381c1;
+  padding: 10px;
+  
+}
+
+.header {
+  
+  grid-area: header;
+  text-align: center;
+  margin: 0;
+
+  
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.nav {
+  grid-area: nav;
+  text-align: center;
+}
+
+.side {
+  grid-area: side;
+  text-align: left;
+}
+.main {
+  grid-area: main;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  
+  grid-template:
+    [row1-start] "header header header" 0.2fr [row1-end]
+    [row2-start] "nav nav nav" 0.2fr [row2-end]
+    [row3-start] "side main main" 5fr [row3-end]
+    [row4-start] "footer footer footer" 0.2fr [row4-end]
+    
+    / 0.2fr auto auto;
+  
+  gap: 5px;
+  background-color: #f0f0ff;
+  
 }

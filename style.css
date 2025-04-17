@@ -47,10 +47,12 @@ button:hover {
 h1 {
   font-size: 60px;
   color: #545454;
+  font-family: "hont1";
 }
 h2 {
   font-size: 48px;
   color: #545454;
+  font-family:"hont";
 }
 h3 {
   font-size: 32px;
@@ -156,3 +158,16 @@ h6 {
   background-color: #f0f0ff;
   
 }
+
+@font-face {
+  font-family: "hont";
+  src: url("/raleway/static/Raleway-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "hont1";
+  src: url("/Special_Gothic_Condensed_One/SpecialGothicCondensedOne-Regular.ttf");
+  font-weight: normal;
+}
+

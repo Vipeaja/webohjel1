@@ -84,7 +84,7 @@ h6 {
 .header {
   
   grid-area: header;
-  text-align: center;
+  text-align: left;
   margin: 0;
 
   
@@ -97,20 +97,52 @@ h6 {
 
 .nav {
   grid-area: nav;
-  text-align: center;
+ 
+  text-align: left;
 }
 
 .side {
   grid-area: side;
   text-align: left;
+  
+
 }
 .main {
   grid-area: main;
-  text-align: center;
+  text-align: left;
+}
+
+.side1 {
+  padding-left: 1.2em;
+  padding-right: 1em;
+  line-height: 2em;
+  
+
+}
+.header1 {
+  padding-left: 3em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+.nav1 {
+  padding-left: 3em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+.footer1 {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+.main1 {
+  padding-top: 0.6em;
+  padding-left: 0.5em;
 }
 
 .container {
   display: grid;
+  height: 100vh;
   
   grid-template:
     [row1-start] "header header header" 0.2fr [row1-end]

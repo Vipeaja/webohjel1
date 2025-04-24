@@ -12,6 +12,7 @@ section {
 
 a {
   color: #545454;
+  
 
 }
 
@@ -171,3 +172,73 @@ h6 {
   font-weight: normal;
 }
 
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 60px;
+    color: #545454;
+    font-family: "hont1";
+  }
+  h2 {
+    font-size: 48px;
+    color: #545454;
+    font-family:"hont";
+  }
+  h3 {
+    font-size: 32px;
+    color: #545454;
+  }
+  h4 {
+    font-size: 18px;
+    color: #545454;
+  }
+  h5 {
+    font-size: 18px;
+    color: #545454;
+  }
+  h6 {
+    font-size: 48px;
+    color: #545454;
+    margin: 0;
+  }
+  body {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+    color: #545454;
+    font-family: "hont1";
+  }
+  h2 {
+    font-size: 26px;
+    color: #545454;
+    font-family:"hont";
+  }
+  h3 {
+    font-size: 22px;
+    color: #545454;
+  }
+  h4 {
+    font-size: 18px;
+    color: #545454;
+  }
+  h5 {
+    font-size: 18px;
+    color: #545454;
+  }
+  h6 {
+    font-size: 48px;
+    color: #545454;
+    margin: 0;
+  }
+  body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  a {
+    display: block;
+  }
+}

@@ -20,6 +20,7 @@ function sendet() {
 
 
 function closedial() {
+    dialog.preventDefault()
     dialog = document.getElementById("dialo")
     dialog.close()
 }

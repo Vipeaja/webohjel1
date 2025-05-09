@@ -12,7 +12,11 @@ function paivitalista(){
 
 function lisaa(){
     var texti = document.getElementById("lisää").value
-    lista.push(texti)
+    var kertaa = document.getElementById("kertaa").value
+    for (let i = 0; i < kertaa; i++){
+        lista.push(texti)
+    }
+    
     paivitalista()
 }
 

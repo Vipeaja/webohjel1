@@ -15,3 +15,5 @@ function lisaa(){
     lista.push(texti)
     paivitalista()
 }
+
+console.log("tehtävä auki")

@@ -1,6 +1,7 @@
 function hello() {
     alert("Hello world!");
 }
+console.log("kommentti auki")
 
 function sendet() {
     birthdayField = document.getElementById("synty").value

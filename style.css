@@ -162,13 +162,13 @@ h6 {
 
 @font-face {
   font-family: "hont";
-  src: url("/raleway/static/Raleway-Regular.ttf");
+  src: url("./raleway/static/Raleway-Regular.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "hont1";
-  src: url("/Special_Gothic_Condensed_One/SpecialGothicCondensedOne-Regular.ttf");
+  src: url("./Special_Gothic_Condensed_One/SpecialGothicCondensedOne-Regular.ttf");
   font-weight: normal;
 }
 

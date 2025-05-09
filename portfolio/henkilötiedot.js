@@ -41,3 +41,5 @@ function luoRivi(){
 }
 
 luoRivi()
+
+console.log("henkilö auki")

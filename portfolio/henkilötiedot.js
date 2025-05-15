@@ -13,6 +13,38 @@ var henkilöt = [
     },
 ]
 
+function lisääRivi(){
+    var nim = document.getElementById("nimi").value
+    var ik = document.getElementById("ikä").value
+    var työ = document.getElementById("työ").value
+
+    
+    var temp = {
+        name:"",
+        age:"",
+        job:"",
+        driversLicense:false
+    }
+    
+    if (ik > 0){
+        temp.age = ik
+        temp.name = nim
+        temp.job = työ
+        if (document.getElementById("ajokortti").checked){
+            temp.driversLicense = true
+        }else{
+            temp.driversLicense = false
+        }
+        
+        henkilöt.push(temp)
+        luoRivi()
+    } else {
+        alert("iän pitää olla positiivinen luku")
+    }
+    
+
+}
+
 
 
 
@@ -26,9 +58,19 @@ function luoRivi(){
         var nimi = document.createElement("td")
         nimi.innerHTML = list.name
         var ikä = document.createElement("td")
-        ikä.innerHTML = list.age
+        if (list.age > 17){
+            ikä.innerHTML = list.age+"🍺"
+        } else {
+            ikä.innerHTML = list.age
+        }
+        
         var job = document.createElement("td")
-        job.innerHTML = list.job
+        if (list.job === "Opiskelija"){
+            job.innerHTML = list.job+"🎓"
+        } else {
+            job.innerHTML = list.job
+        }
+
         var kortti = document.createElement("td")
         kortti.innerHTML = list.driversLicense
         rivi.append(nimi)

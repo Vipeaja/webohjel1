@@ -44,7 +44,40 @@ function laskin_jako(){
     alert(eka/toka)
 }
 
+function laskin_Abs(){
+    eka = Number(document.getElementById("numero1").value)
+    
+    alert(Math.abs(eka))
+}
 
+function laskin_Sqrt(){
+    eka = Number(document.getElementById("numero1").value)
+    
+    alert(Math.sqrt(eka))
+}
+
+function laskin_Pow(){
+    eka = Number(document.getElementById("numero1").value)
+    toka = Number(document.getElementById("numero2").value)
+    alert(Math.pow(eka,toka))
+}
+
+function laskin_Max(){
+    eka = Number(document.getElementById("numero1").value)
+    toka = Number(document.getElementById("numero2").value)
+    alert(Math.max(eka,toka))
+}
+
+function laskin_Min(){
+    eka = Number(document.getElementById("numero1").value)
+    toka = Number(document.getElementById("numero2").value)
+    alert(Math.min(eka,toka))
+}
+
+function laskin_Round(){
+    eka = Number(document.getElementById("numero1").value)
+    alert(Math.round(eka))
+}
 
 
 function aika(){

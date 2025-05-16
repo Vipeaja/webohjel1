@@ -66,3 +66,57 @@ function aika(){
     
 
 }
+
+var Veijo = new Set(["luku","poisto"])
+var Elvira = new Set(["luku","kirjoitus","muokkaus"])
+var Mehdi = new Set(["luku","muokkaus","poisto"])
+var Tuuli = new Set(["kirjoitus","poisto"])
+
+for (var veijo1 of Veijo){
+    rivi = document.getElementById("veijo")
+    veijor = document.createElement("li")
+    veijor.innerHTML = veijo1
+    rivi.append(veijor)
+}
+
+for (var elvira1 of Elvira){
+    rivi = document.getElementById("elvira")
+    elvirar = document.createElement("li")
+    elvirar.innerHTML = elvira1
+    rivi.append(elvirar)
+}
+
+for (var mehdi1 of Mehdi){
+    rivi = document.getElementById("mehdi")
+    mehdir = document.createElement("li")
+    mehdir.innerHTML = mehdi1
+    rivi.append(mehdir)
+}
+
+for (var tuuli1 of Tuuli){
+    rivi = document.getElementById("tuuli")
+    tuulir = document.createElement("li")
+    tuulir.innerHTML = tuuli1
+    rivi.append(tuulir)
+}
+
+for (var veijotuuli1 of Veijo.union(Tuuli)){
+    rivi = document.getElementById("Veijotuuli")
+    veijotuulir = document.createElement("li")
+    veijotuulir.innerHTML = veijotuuli1
+    rivi.append(veijotuulir)
+}
+
+for (var mehdielvira1 of Mehdi.intersection(Elvira)){
+    rivi = document.getElementById("Mehdielvira")
+    mehdielvirar = document.createElement("li")
+    mehdielvirar.innerHTML = mehdielvira1
+    rivi.append(mehdielvirar)
+}
+
+for (var elviratuuli1 of Elvira.symmetricDifference(Tuuli)){
+    rivi = document.getElementById("Elviratuuli")
+    elviratuulir = document.createElement("li")
+    elviratuulir.innerHTML = elviratuuli1
+    rivi.append(elviratuulir)
+}

@@ -33,6 +33,10 @@ button:hover {
   background-color: #919191;
 }
 
+.numero {
+  width: 50px;
+}
+
 
 .kuva {
   position:relative;
